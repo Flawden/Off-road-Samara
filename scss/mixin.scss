@@ -1,0 +1,27 @@
+@mixin flex {
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+
+}
+
+@mixin inline-flex {
+
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+
+}
+
+@mixin flex-direction_column {
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+}
