@@ -39,16 +39,13 @@ $second-text-color: #06081B;
 body {
 	font-family: Roboto, Arial;
 	height: 100%;
+	scroll-behavior: smooth;
 }
 
 .wrapper {
 	max-width: 1140px;
 	margin: 0 auto;
 	padding: 0 10px;
-  }
-  
-  .burger {
-	display: none;
   }
   
 
@@ -319,6 +316,31 @@ body {
 	&__image {
 		border-radius: 40px;
 		max-width: 600px;
+	}
+}
+
+@media (max-width: 1200px) { 
+	.author-block {
+		@include flex;
+		&__image {
+			border-radius: 40px;
+			max-width: 400px;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media (max-width: 800px) { 
+	.author-block {
+		@include flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		&__image {
+			border-radius: 40px;
+			max-width: 400px;
+			order: 1;
+			margin-bottom: 40px;
+		}
 	}
 }
 

@@ -74,16 +74,13 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: Roboto, Arial;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 10px;
-}
-
-.burger {
-  display: none;
 }
 
 #logo {
@@ -372,6 +369,42 @@ body {
   max-width: 600px;
 }
 
+@media (max-width: 1200px) {
+  .author-block {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .author-block__image {
+    border-radius: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 800px) {
+  .author-block {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .author-block__image {
+    border-radius: 40px;
+    max-width: 400px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 40px;
+  }
+}
 .author-block-right {
   margin-left: 30px;
   text-align: left;
